@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		9175DD2D262EBF37007B014C /* UIImageView+DownloadIamge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9175DD2C262EBF37007B014C /* UIImageView+DownloadIamge.swift */; };
-		9175DD362630139F007B014C /* EdamamNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9175DD352630139F007B014C /* EdamamNetwork.swift */; };
 		91B92F5B262E4DFC001644FA /* EdamamResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B92F5A262E4DFC001644FA /* EdamamResults.swift */; };
 		91B92F63262E4EA5001644FA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B92F62262E4EA5001644FA /* Constants.swift */; };
 		91F1E21A260DD78D001777CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F1E219260DD78D001777CA /* AppDelegate.swift */; };
@@ -41,7 +40,6 @@
 
 /* Begin PBXFileReference section */
 		9175DD2C262EBF37007B014C /* UIImageView+DownloadIamge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+DownloadIamge.swift"; sourceTree = "<group>"; };
-		9175DD352630139F007B014C /* EdamamNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdamamNetwork.swift; sourceTree = "<group>"; };
 		91B92F5A262E4DFC001644FA /* EdamamResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdamamResults.swift; sourceTree = "<group>"; };
 		91B92F62262E4EA5001644FA /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		91F1E216260DD78D001777CA /* nummy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nummy.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -91,7 +89,6 @@
 			children = (
 				91B92F5A262E4DFC001644FA /* EdamamResults.swift */,
 				9175DD2C262EBF37007B014C /* UIImageView+DownloadIamge.swift */,
-				9175DD352630139F007B014C /* EdamamNetwork.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -315,7 +312,6 @@
 				91B92F5B262E4DFC001644FA /* EdamamResults.swift in Sources */,
 				91F1E21A260DD78D001777CA /* AppDelegate.swift in Sources */,
 				91F1E21C260DD78D001777CA /* SceneDelegate.swift in Sources */,
-				9175DD362630139F007B014C /* EdamamNetwork.swift in Sources */,
 				91B92F63262E4EA5001644FA /* Constants.swift in Sources */,
 				9175DD2D262EBF37007B014C /* UIImageView+DownloadIamge.swift in Sources */,
 			);
