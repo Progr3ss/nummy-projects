@@ -4,22 +4,35 @@
 //
 //  Created by Martin Chibwe on 3/26/21.
 //
-
+// swiftlint:disable superfluous_disable_command trailing_newline
 import UIKit
 
 class ViewController: UIViewController {
     var edamamResults: EdamamResults?
+    @IBOutlet weak var  foodTableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        getRecipe(query: "chicken")
+        setupTableView()
     }
 
 }
-extension ViewController : UITableViewDataSource, UITableViewDelegate {
+extension ViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return edamamResults?.count ?? 1
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        let cell = foodTableView.dequeueReusableCell(withIdentifier: "foodCell", for: indexPath) as! RecipeTableViewCell
+        if let result = self.edamamResults {
+//            let recipeIndex = result.hits[indexPath.row].recipe
+            cell.configureCell(with: result, indexPath: indexPath)
+//            cell.textLabel?.text = recipeIndex?.label
+        }
+        return cell
+    }
+    private func setupTableView() {
+        let nib = UINib(nibName: "RecipeTableViewCell", bundle: nil)
+        foodTableView.register(nib, forCellReuseIdentifier: "foodCell")
     }
 }
 // MARK: Network Helper Methods
@@ -56,25 +69,25 @@ extension ViewController {
     }
     // MARK: - getRecipe with query search
     func getRecipe(query: String) {
-        let param =  methodParapeters(ingridents: 5, diet: "balanced", health: "soy-free", calories: 500, from: 0, toPage: 200)
+        let param =  methodParapeters(ingridents: 5, diet: "balanced", health: "soy-free", calories: 500, from: 0, toPage: 100)
         let url3 = edamanURLFromParameters(query: query, parameters: param)
-        let task = URLSession.shared.dataTask(with: url3) { (data, response, error) in
-            guard error == nil else{
+        let task = URLSession.shared.dataTask(with: url3) { (data,response,error) in
+            guard error == nil else {
                 print("There was an error with your request: ", error!.localizedDescription)
                 return
             }
-            guard data != nil else{
+            guard data != nil else {
                 print("No data was returned by the request")
                 return
             }
             do {
                 if let jsonObject = try JSONSerialization.jsonObject(with: data!, options: .allowFragments) as? [String: Any] {
-                    self.edamamResults = EdamamResults(jsonObject)
                     DispatchQueue.main.async {
-//                        self.forYouTableView.reloadData()
+                        self.edamamResults = EdamamResults(jsonObject)
+                        self.foodTableView.reloadData()
                     }
                 }
-            }catch {
+            } catch {
                 print("Could not parse the data as JSON: \(error.localizedDescription)")
             }
         }

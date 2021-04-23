@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="foodCell" rowHeight="281" id="KGk-i7-Jjw" customClass="RecipeTableViewCell" customModule="nummy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="744" height="281"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="744" height="281"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yIf-Q7-Jtm">
+                        <rect key="frame" x="0.0" y="0.0" width="744" height="281"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tgv-5X-kAn">
+                        <rect key="frame" x="0.0" y="223" width="744" height="58"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="ZB5-be-oZL">
+                                <rect key="frame" x="10" y="8" width="563.5" height="42"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="asid jfsdijfldskaj fskldjf klsdjfklsdj fsdklf jsdklfj sldf jsdlkfjsdlkf jds" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5yQ-IM-ETO">
+                                        <rect key="frame" x="0.0" y="0.0" width="563.5" height="24"/>
+                                        <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="hsdafj sdfjsdlfj sdlfj dslk jfsdklfj sdlkfjsdklafj sdklfjsdl fjsdlakfjsdlkfjsdlf jsdklfjsdf" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zO1-X2-6nB">
+                                        <rect key="frame" x="0.0" y="26" width="563.5" height="16"/>
+                                        <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="13"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ZB5-be-oZL" firstAttribute="centerY" secondItem="tgv-5X-kAn" secondAttribute="centerY" id="2ml-VH-4yp"/>
+                            <constraint firstItem="ZB5-be-oZL" firstAttribute="top" secondItem="tgv-5X-kAn" secondAttribute="topMargin" id="uHG-QO-dfE"/>
+                            <constraint firstItem="ZB5-be-oZL" firstAttribute="leading" secondItem="tgv-5X-kAn" secondAttribute="leading" constant="10" id="xEb-9L-xBw"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="tgv-5X-kAn" firstAttribute="leading" secondItem="yIf-Q7-Jtm" secondAttribute="leading" id="0ka-X4-VSI"/>
+                    <constraint firstItem="tgv-5X-kAn" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="DpC-rd-uCh"/>
+                    <constraint firstItem="tgv-5X-kAn" firstAttribute="trailing" secondItem="yIf-Q7-Jtm" secondAttribute="trailing" id="M7V-jA-vLH"/>
+                    <constraint firstAttribute="bottom" secondItem="tgv-5X-kAn" secondAttribute="bottom" id="Opn-o5-kcQ"/>
+                    <constraint firstAttribute="trailing" secondItem="tgv-5X-kAn" secondAttribute="trailing" id="e0S-cL-Zbf"/>
+                    <constraint firstItem="yIf-Q7-Jtm" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="gij-qu-RRV"/>
+                    <constraint firstItem="tgv-5X-kAn" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="223" id="kYV-Kv-bte"/>
+                    <constraint firstItem="tgv-5X-kAn" firstAttribute="bottom" secondItem="yIf-Q7-Jtm" secondAttribute="bottom" id="uxY-8B-Pvw"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="foodImage" destination="yIf-Q7-Jtm" id="wX6-uu-Goy"/>
+                <outlet property="mainFoodTitleLabel" destination="5yQ-IM-ETO" id="JHx-6d-Iui"/>
+                <outlet property="subTitleSourceLabel" destination="zO1-X2-6nB" id="P7h-Ow-q6Q"/>
+            </connections>
+            <point key="canvasLocation" x="-342.02898550724638" y="28.459821428571427"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
