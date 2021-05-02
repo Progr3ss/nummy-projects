@@ -7,7 +7,6 @@
 
 import Foundation
 // MARK: - Constants
-
 struct Constants {
     struct APIKeys {
         static let appKey = "4d45a9963d006ce6d48275df6482643b"
