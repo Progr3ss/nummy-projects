@@ -11,7 +11,6 @@
 		916188B1263D3CA2003B7C99 /* Font Awesome 5 Brands-Regular-400.otf in Resources */ = {isa = PBXBuildFile; fileRef = 916188AE263D3CA2003B7C99 /* Font Awesome 5 Brands-Regular-400.otf */; };
 		916188B2263D3CA2003B7C99 /* Font Awesome 5 Free-Regular-400.otf in Resources */ = {isa = PBXBuildFile; fileRef = 916188AF263D3CA2003B7C99 /* Font Awesome 5 Free-Regular-400.otf */; };
 		9175DD2D262EBF37007B014C /* UIImageView+DownloadIamge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9175DD2C262EBF37007B014C /* UIImageView+DownloadIamge.swift */; };
-		91A55488263E1E190034988B /* MainFoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A55487263E1E190034988B /* MainFoodView.swift */; };
 		91A5548A263E64BB0034988B /* RecipeNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A55489263E64BB0034988B /* RecipeNetworkManager.swift */; };
 		91A5548C263E64DD0034988B /* RecipeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A5548B263E64DD0034988B /* RecipeModel.swift */; };
 		91B92F5B262E4DFC001644FA /* RecipeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B92F5A262E4DFC001644FA /* RecipeData.swift */; };
@@ -49,7 +48,6 @@
 		916188AE263D3CA2003B7C99 /* Font Awesome 5 Brands-Regular-400.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Font Awesome 5 Brands-Regular-400.otf"; sourceTree = "<group>"; };
 		916188AF263D3CA2003B7C99 /* Font Awesome 5 Free-Regular-400.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Font Awesome 5 Free-Regular-400.otf"; sourceTree = "<group>"; };
 		9175DD2C262EBF37007B014C /* UIImageView+DownloadIamge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+DownloadIamge.swift"; sourceTree = "<group>"; };
-		91A55487263E1E190034988B /* MainFoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFoodView.swift; sourceTree = "<group>"; };
 		91A55489263E64BB0034988B /* RecipeNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeNetworkManager.swift; sourceTree = "<group>"; };
 		91A5548B263E64DD0034988B /* RecipeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeModel.swift; sourceTree = "<group>"; };
 		91B92F5A262E4DFC001644FA /* RecipeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeData.swift; sourceTree = "<group>"; };
@@ -151,7 +149,6 @@
 				91F1E22A260DD78E001777CA /* Info.plist */,
 				91F1E222260DD78D001777CA /* nummy.xcdatamodeld */,
 				91B92F5F262E4E05001644FA /* Model */,
-				91A55487263E1E190034988B /* MainFoodView.swift */,
 			);
 			path = nummy;
 			sourceTree = "<group>";
@@ -334,7 +331,6 @@
 				91B92F5B262E4DFC001644FA /* RecipeData.swift in Sources */,
 				91A5548C263E64DD0034988B /* RecipeModel.swift in Sources */,
 				91F1E21A260DD78D001777CA /* AppDelegate.swift in Sources */,
-				91A55488263E1E190034988B /* MainFoodView.swift in Sources */,
 				91F1E21C260DD78D001777CA /* SceneDelegate.swift in Sources */,
 				91B92F63262E4EA5001644FA /* Constants.swift in Sources */,
 				9175DD2D262EBF37007B014C /* UIImageView+DownloadIamge.swift in Sources */,
