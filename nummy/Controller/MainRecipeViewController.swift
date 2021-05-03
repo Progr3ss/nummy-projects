@@ -25,7 +25,7 @@ class MainRecipeViewController: UIViewController {
         searchButton.titleLabel?.font = fontConfig
         self.recipeTableView.delegate = self
         self.recipeTableView.dataSource = self
-        self.recipeTableView.register(RecipeCell.self, forCellReuseIdentifier: "foodCell")
+        recipeTableView.register(UINib(nibName: "RecipeCell", bundle: nil), forCellReuseIdentifier: "foodCell")
     }
     func setupNetwork() {
         recipeNetworkManager.delegate = self

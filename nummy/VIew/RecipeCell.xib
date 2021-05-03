@@ -16,9 +16,28 @@
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
                 <rect key="frame" x="0.0" y="0.0" width="962" height="256"/>
                 <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xa1-hc-fGZ">
+                        <rect key="frame" x="10" y="237" width="566" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="Z4C-zf-CO9"/>
+                            <constraint firstAttribute="width" constant="566" id="whI-Tv-2ll"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="Xa1-hc-fGZ" secondAttribute="bottom" constant="-13" id="6en-sx-qrb"/>
+                    <constraint firstItem="Xa1-hc-fGZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="LDJ-Zb-jUO"/>
+                </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <color key="backgroundColor" systemColor="systemRedColor"/>
+            <connections>
+                <outlet property="mainTitleLabel" destination="Xa1-hc-fGZ" id="osC-nh-7FK"/>
+            </connections>
             <point key="canvasLocation" x="504.34782608695656" y="223.66071428571428"/>
         </tableViewCell>
     </objects>

@@ -9,6 +9,7 @@ import UIKit
 
 class RecipeCell: UITableViewCell {
 
+    @IBOutlet weak var mainTitleLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -20,6 +21,7 @@ class RecipeCell: UITableViewCell {
         // Configure the view for the selected state
     }
     func configureCell(recipe: RecipeModel) {
+        self.mainTitleLabel.text = "martin"
         print("recpieCell ", recipe)
     }
 }
