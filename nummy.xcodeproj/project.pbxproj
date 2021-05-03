@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9131BDF8263FD92F0080219D /* RecipeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9131BDF6263FD92F0080219D /* RecipeCell.swift */; };
+		9131BDF9263FD92F0080219D /* RecipeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9131BDF7263FD92F0080219D /* RecipeCell.xib */; };
 		916188B0263D3CA2003B7C99 /* Font Awesome 5 Free-Solid-900.otf in Resources */ = {isa = PBXBuildFile; fileRef = 916188AD263D3CA2003B7C99 /* Font Awesome 5 Free-Solid-900.otf */; };
 		916188B1263D3CA2003B7C99 /* Font Awesome 5 Brands-Regular-400.otf in Resources */ = {isa = PBXBuildFile; fileRef = 916188AE263D3CA2003B7C99 /* Font Awesome 5 Brands-Regular-400.otf */; };
 		916188B2263D3CA2003B7C99 /* Font Awesome 5 Free-Regular-400.otf in Resources */ = {isa = PBXBuildFile; fileRef = 916188AF263D3CA2003B7C99 /* Font Awesome 5 Free-Regular-400.otf */; };
@@ -44,6 +46,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9131BDF6263FD92F0080219D /* RecipeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCell.swift; sourceTree = "<group>"; };
+		9131BDF7263FD92F0080219D /* RecipeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecipeCell.xib; sourceTree = "<group>"; };
 		916188AD263D3CA2003B7C99 /* Font Awesome 5 Free-Solid-900.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Font Awesome 5 Free-Solid-900.otf"; sourceTree = "<group>"; };
 		916188AE263D3CA2003B7C99 /* Font Awesome 5 Brands-Regular-400.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Font Awesome 5 Brands-Regular-400.otf"; sourceTree = "<group>"; };
 		916188AF263D3CA2003B7C99 /* Font Awesome 5 Free-Regular-400.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Font Awesome 5 Free-Regular-400.otf"; sourceTree = "<group>"; };
@@ -94,9 +98,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9131BDF3263FD8330080219D /* VIew */ = {
+			isa = PBXGroup;
+			children = (
+				91F1E21F260DD78D001777CA /* Main.storyboard */,
+				91F1E225260DD78E001777CA /* Assets.xcassets */,
+				91F1E227260DD78E001777CA /* LaunchScreen.storyboard */,
+				9131BDF6263FD92F0080219D /* RecipeCell.swift */,
+				9131BDF7263FD92F0080219D /* RecipeCell.xib */,
+			);
+			path = VIew;
+			sourceTree = "<group>";
+		};
+		9131BDF4263FD8480080219D /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				91F1E219260DD78D001777CA /* AppDelegate.swift */,
+				91F1E21B260DD78D001777CA /* SceneDelegate.swift */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		9131BDF5263FD8690080219D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				91F1E21D260DD78D001777CA /* MainRecipeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		91B92F5F262E4E05001644FA /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				91F1E222260DD78D001777CA /* nummy.xcdatamodeld */,
 				91B92F5A262E4DFC001644FA /* RecipeData.swift */,
 				9175DD2C262EBF37007B014C /* UIImageView+DownloadIamge.swift */,
 				91A55489263E64BB0034988B /* RecipeNetworkManager.swift */,
@@ -140,14 +174,10 @@
 			isa = PBXGroup;
 			children = (
 				91B92F61262E4E78001644FA /* Reference */,
-				91F1E219260DD78D001777CA /* AppDelegate.swift */,
-				91F1E21B260DD78D001777CA /* SceneDelegate.swift */,
-				91F1E21D260DD78D001777CA /* MainRecipeViewController.swift */,
-				91F1E21F260DD78D001777CA /* Main.storyboard */,
-				91F1E225260DD78E001777CA /* Assets.xcassets */,
-				91F1E227260DD78E001777CA /* LaunchScreen.storyboard */,
+				9131BDF5263FD8690080219D /* Controller */,
+				9131BDF4263FD8480080219D /* AppDelegate */,
+				9131BDF3263FD8330080219D /* VIew */,
 				91F1E22A260DD78E001777CA /* Info.plist */,
-				91F1E222260DD78D001777CA /* nummy.xcdatamodeld */,
 				91B92F5F262E4E05001644FA /* Model */,
 			);
 			path = nummy;
@@ -281,6 +311,7 @@
 				91F1E226260DD78E001777CA /* Assets.xcassets in Resources */,
 				91F1E221260DD78D001777CA /* Main.storyboard in Resources */,
 				916188B0263D3CA2003B7C99 /* Font Awesome 5 Free-Solid-900.otf in Resources */,
+				9131BDF9263FD92F0080219D /* RecipeCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,6 +361,7 @@
 				91F1E21E260DD78D001777CA /* MainRecipeViewController.swift in Sources */,
 				91B92F5B262E4DFC001644FA /* RecipeData.swift in Sources */,
 				91A5548C263E64DD0034988B /* RecipeModel.swift in Sources */,
+				9131BDF8263FD92F0080219D /* RecipeCell.swift in Sources */,
 				91F1E21A260DD78D001777CA /* AppDelegate.swift in Sources */,
 				91F1E21C260DD78D001777CA /* SceneDelegate.swift in Sources */,
 				91B92F63262E4EA5001644FA /* Constants.swift in Sources */,

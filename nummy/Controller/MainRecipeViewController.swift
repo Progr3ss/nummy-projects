@@ -8,7 +8,7 @@
 import UIKit
 
 class MainRecipeViewController: UIViewController {
-    var recipeResult :[RecipeModel] = [RecipeModel]()
+    var recipeResult: [RecipeModel] = [RecipeModel]()
     @IBOutlet weak var searchButton: UIButton!
     @IBOutlet weak var slideBarButton: UIButton!
     @IBOutlet weak var  foodTableView: UITableView!
@@ -18,7 +18,6 @@ class MainRecipeViewController: UIViewController {
         super.viewDidLoad()
         setupUI()
         setupNetwork()
-        
     }
     func setupUI() {
         let fontConfig = UIFont(name: "FontAwesome5Free-Solid", size: 25 )
@@ -26,8 +25,7 @@ class MainRecipeViewController: UIViewController {
         searchButton.titleLabel?.font = fontConfig
         self.recipeTableView.delegate = self
         self.recipeTableView.dataSource = self
-//        self.recipeTableView.register("RecipeCell", forCellReuseIdentifier: "foodCell")
-//        foodTableView.register("RecipeCell", forCellReuseIdentifier: "foodCell")
+        self.recipeTableView.register(RecipeCell.self, forCellReuseIdentifier: "foodCell")
     }
     func setupNetwork() {
         recipeNetworkManager.delegate = self
@@ -60,11 +58,9 @@ extension MainRecipeViewController: UITableViewDelegate, UITableViewDataSource {
         return 150
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = recipeTableView.dequeueReusableCell(withIdentifier: "foodCell", for: indexPath)
-//        let recipes = self.recipeResult[indexPath.row]
-//        cell!.configureCell(with: recipes)
-        cell.textLabel?.text = "martin"
-       
+        let cell = recipeTableView.dequeueReusableCell(withIdentifier: "foodCell", for: indexPath) as! RecipeCell
+        let recipes = self.recipeResult[indexPath.row]
+        cell.configureCell(recipe: recipes)
         return cell
     }
 }
