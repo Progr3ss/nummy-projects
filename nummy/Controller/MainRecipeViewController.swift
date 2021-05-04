@@ -55,10 +55,11 @@ extension MainRecipeViewController: UITableViewDelegate, UITableViewDataSource {
         return recipeResult.count
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 150
+        return 250
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = recipeTableView.dequeueReusableCell(withIdentifier: "foodCell", for: indexPath) as! RecipeCell
+        cell.layer.cornerRadius = 10.0
         let recipes = self.recipeResult[indexPath.row]
         cell.configureCell(recipe: recipes)
         return cell
