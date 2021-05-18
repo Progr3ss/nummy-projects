@@ -13,8 +13,10 @@
 		916188B1263D3CA2003B7C99 /* Font Awesome 5 Brands-Regular-400.otf in Resources */ = {isa = PBXBuildFile; fileRef = 916188AE263D3CA2003B7C99 /* Font Awesome 5 Brands-Regular-400.otf */; };
 		916188B2263D3CA2003B7C99 /* Font Awesome 5 Free-Regular-400.otf in Resources */ = {isa = PBXBuildFile; fileRef = 916188AF263D3CA2003B7C99 /* Font Awesome 5 Free-Regular-400.otf */; };
 		9175DD2D262EBF37007B014C /* UIImageView+DownloadIamge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9175DD2C262EBF37007B014C /* UIImageView+DownloadIamge.swift */; };
+		91A3FC1526429916003BCD02 /* SearchForRecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A3FC1426429916003BCD02 /* SearchForRecipeViewController.swift */; };
 		91A5548A263E64BB0034988B /* RecipeNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A55489263E64BB0034988B /* RecipeNetworkManager.swift */; };
 		91A5548C263E64DD0034988B /* RecipeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A5548B263E64DD0034988B /* RecipeModel.swift */; };
+		91AF46B42653909C005ADF18 /* DetailRecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91AF46B32653909C005ADF18 /* DetailRecipeViewController.swift */; };
 		91B92F5B262E4DFC001644FA /* RecipeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B92F5A262E4DFC001644FA /* RecipeData.swift */; };
 		91B92F63262E4EA5001644FA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B92F62262E4EA5001644FA /* Constants.swift */; };
 		91F1E21A260DD78D001777CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F1E219260DD78D001777CA /* AppDelegate.swift */; };
@@ -52,8 +54,10 @@
 		916188AE263D3CA2003B7C99 /* Font Awesome 5 Brands-Regular-400.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Font Awesome 5 Brands-Regular-400.otf"; sourceTree = "<group>"; };
 		916188AF263D3CA2003B7C99 /* Font Awesome 5 Free-Regular-400.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Font Awesome 5 Free-Regular-400.otf"; sourceTree = "<group>"; };
 		9175DD2C262EBF37007B014C /* UIImageView+DownloadIamge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+DownloadIamge.swift"; sourceTree = "<group>"; };
+		91A3FC1426429916003BCD02 /* SearchForRecipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchForRecipeViewController.swift; sourceTree = "<group>"; };
 		91A55489263E64BB0034988B /* RecipeNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeNetworkManager.swift; sourceTree = "<group>"; };
 		91A5548B263E64DD0034988B /* RecipeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeModel.swift; sourceTree = "<group>"; };
+		91AF46B32653909C005ADF18 /* DetailRecipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRecipeViewController.swift; sourceTree = "<group>"; };
 		91B92F5A262E4DFC001644FA /* RecipeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeData.swift; sourceTree = "<group>"; };
 		91B92F62262E4EA5001644FA /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		91F1E216260DD78D001777CA /* nummy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nummy.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -123,6 +127,8 @@
 			isa = PBXGroup;
 			children = (
 				91F1E21D260DD78D001777CA /* MainRecipeViewController.swift */,
+				91A3FC1426429916003BCD02 /* SearchForRecipeViewController.swift */,
+				91AF46B32653909C005ADF18 /* DetailRecipeViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -362,9 +368,11 @@
 				91B92F5B262E4DFC001644FA /* RecipeData.swift in Sources */,
 				91A5548C263E64DD0034988B /* RecipeModel.swift in Sources */,
 				9131BDF8263FD92F0080219D /* RecipeCell.swift in Sources */,
+				91AF46B42653909C005ADF18 /* DetailRecipeViewController.swift in Sources */,
 				91F1E21A260DD78D001777CA /* AppDelegate.swift in Sources */,
 				91F1E21C260DD78D001777CA /* SceneDelegate.swift in Sources */,
 				91B92F63262E4EA5001644FA /* Constants.swift in Sources */,
+				91A3FC1526429916003BCD02 /* SearchForRecipeViewController.swift in Sources */,
 				9175DD2D262EBF37007B014C /* UIImageView+DownloadIamge.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

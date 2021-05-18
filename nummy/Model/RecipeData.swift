@@ -31,7 +31,7 @@ struct Recipe: Codable {
     var source: String?
     var url: String?
     var shareAs: String?
-    var yield: Int?
+    var yield: Double?
     var label: String?
 //    var source: String
     //    var url: String?

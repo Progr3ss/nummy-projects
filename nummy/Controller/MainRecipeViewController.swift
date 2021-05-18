@@ -6,7 +6,7 @@
 //
 // swiftlint:disable superfluous_disable_command trailing_newline
 import UIKit
-
+import SwiftUI
 class MainRecipeViewController: UIViewController {
     var recipeResult: [RecipeModel] = [RecipeModel]()
     @IBOutlet weak var searchButton: UIButton!
@@ -63,5 +63,12 @@ extension MainRecipeViewController: UITableViewDelegate, UITableViewDataSource {
         let recipes = self.recipeResult[indexPath.row]
         cell.configureCell(recipe: recipes)
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let recipe = self.recipeResult[indexPath.row]
+        let detailsView = DetailRecipeViewController(recipe: recipe)
+        let host = UIHostingController(rootView: detailsView)
+        navigationController?.pushViewController(host, animated: true)
     }
 }

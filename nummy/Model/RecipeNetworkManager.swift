@@ -68,6 +68,7 @@ class RecipeNetworkManager {
         let decoder = JSONDecoder()
         do {
             let result = try decoder.decode(RecipeData.self, from: recipeData)
+            print("JsonResult ", result.hits![1].recipe?.label)
             let recipeData = RecipeModel.recipeFromResults(result)
             return recipeData
         } catch {
